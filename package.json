@@ -1,0 +1,31 @@
+{
+  "name": "webpack_base",
+  "version": "0.0.1",
+  "description": "Base Webpack reac scss hot-load workflow",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rlog/react-base.git"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --hot --progress --color --content-base build",
+    "deploy": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Deng",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.9.1",
+    "jsx-loader": "^0.12.2",
+    "node-sass": "^3.0.0-pre",
+    "sass-loader": "^1.0.0",
+    "style-loader": "^0.9.0",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "react": "^0.13.1",
+    "react-router": "^0.13.2"
+  },
+  "keywords": [ "react", "react-router", "webpack", "sass", "hot-loader"]
+}
