@@ -1,11 +1,17 @@
 @import '_normalize.scss';
 
+$blue: #0e90d2;
+
 body {
   background: #eee;
   color: #333;
+}
 
-  h1 {
-    background: red;
-    color: #fff;
-  }
+header {
+  height: 50px;
+  line-height: 50px;
+  background: $blue;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }

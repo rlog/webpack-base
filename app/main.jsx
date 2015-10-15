@@ -1,17 +1,21 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Main = require('./pages/main/index.jsx');
+import React from "react";
+import ReactDOM from "react-dom";
+import Main from "./pages/main/index";
+import './style/main';
 
-require('./style/main.scss');
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-var App = React.createClass({
-	render: function () {
-		return (
+  render () {
+    return (
 			<div>
 				<Main />
 			</div>
-		);
-	}
-});
+    );
+  }
+}
 
-ReactDOM.render(<App/>, document.getElementById('content'));
+ReactDOM.render(<App />, document.getElementById('content'));
