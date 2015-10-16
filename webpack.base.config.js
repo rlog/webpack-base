@@ -29,8 +29,8 @@ module.exports = function(env) {
 		module: {
 			loaders: [
 				{
-					test: /\.(png|jpg|jpeg|gif|svg)$/,
-					loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+					test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2|otf)$/,
+					loader: 'url-loader?limit=10000'
 				},
 
 				{

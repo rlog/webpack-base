@@ -8,7 +8,7 @@ class Header extends React.Component {
 
   render () {
     return (
-      <header>Header</header>
+      <header>EBOX</header>
     );
   }
 }

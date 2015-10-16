@@ -32,7 +32,6 @@
     "webpack-dev-server": "*"
   },
   "dependencies": {
-    "amazeui-react": "*",
     "lodash": "*",
     "react": "*",
     "react-dom": "^0.14.0",

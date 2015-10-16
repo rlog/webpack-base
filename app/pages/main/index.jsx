@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../component/header";
+import OrderItem from "./orderItem";
 
 class Main extends React.Component {
   constructor(props) {
@@ -11,7 +12,9 @@ class Main extends React.Component {
     return (
 			<div>
 	      <Header />
-				<p>Hello World</p>
+				<div className="content">
+					<OrderItem />
+				</div>
 			</div>
     );
   }
