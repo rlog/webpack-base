@@ -35,13 +35,12 @@ module.exports = function(env) {
 
 				{
 					test: /\.jsx$/,
-					loader: 'react-hot-loader!babel-loader?stage=0',
+					loader: 'react-hot-loader!babel?cacheDirectory=true&presets[]=react,presets[]=es2015,presets[]=react',
 					exclude: /(node_modules|bower_components)/
 				},
 
 				{
 					test: /\.scss$/,
-					// loader: 'style-loader!css-loader?module' + (isDev ? '' : '&localIdentName=[path][name]---[local]---[hash:base64:5]') + '!sass-loader'
 					loader: 'style-loader!css-loader?module!sass-loader'
 				}
 			]
