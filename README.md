@@ -1,4 +1,4 @@
-## Base Webpack reac scss hot-load workflow
+## Base Webpack react scss hot-load workflow
 
 `npm i`
 
