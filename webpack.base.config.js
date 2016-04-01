@@ -4,7 +4,7 @@ module.exports = function(env) {
 	env = env || 'dev';
 	var isDev = env === 'dev';
 	var conf = {
-		entry: './app/main.jsx',
+		entry: './app/main.js',
 
 		output: {
 			path: './dist',
@@ -34,7 +34,7 @@ module.exports = function(env) {
 				},
 
 				{
-					test: /\.jsx$/,
+					test: /\.(js|jsx)$/,
 					loader: 'react-hot-loader!babel?cacheDirectory=true&presets[]=react,presets[]=es2015,presets[]=react',
 					exclude: /(node_modules|bower_components)/
 				},
